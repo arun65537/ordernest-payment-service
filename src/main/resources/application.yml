@@ -58,9 +58,6 @@ app:
   kafka:
     topic:
       payment-events: ${PAYMENT_EVENTS_TOPIC:payment.events}
-      order-cancelled-events: ${ORDER_CANCELLED_EVENTS_TOPIC:order.cancelled.events}
-    consumer:
-      order-cancelled-group-id: ${ORDER_CANCELLED_EVENTS_CONSUMER_GROUP_ID:ordernest-payment-service-order-cancel-consumer}
   payment:
     pending-attempt-ttl-seconds: ${PAYMENT_PENDING_ATTEMPT_TTL_SECONDS:3600}
   razorpay:
